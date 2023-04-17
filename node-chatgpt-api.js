@@ -9,7 +9,7 @@ require("dotenv").config();
   });
   const openai = new OpenAIApi(configuration);
 
-  const userSelection = readlineSync.question("Select a user (1 or 2): ");
+  const userSelection = readlineSync.question("Select a user name: ");
   const historyFile = `history_${userSelection}.json`;
   let history = [];
 
