@@ -36,7 +36,8 @@ require("dotenv").config();
       });
 
       const completion_text = completion.data.choices[0].message.content;
-      console.log(completion_text);
+      console.log("GPT output:", completion_text);
+      console.log("---------------------------------------------");
 
       history.push([user_input, completion_text]);
 
